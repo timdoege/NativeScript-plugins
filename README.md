@@ -1,22 +1,11 @@
-**=== IMPORTANT**
-
-**Download and Configure first:**
-
-1. Download a zip of this repo
-2. Unzip and name the folder appropriately (perhaps the name of the npm scope you intend to manage here)
-3. Setup workspace: `npm run setup`
-4. Configure your npm scope: `npm run config`
-
-===
-
-# @nativescript/\* plugins
+# @timdoege/\* plugins
 
 ```
 npm run setup
 npm start
 ```
 
-- @nativescript
+- @timdoege
 
 # How to use?
 
