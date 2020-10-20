@@ -63,6 +63,13 @@ module.exports = {
 		// packages
 		// build output is always in dist/packages
 		'@timdoege': {
+			// @timdoege/nativescript-geocoding
+			'nativescript-geocoding': {
+				build: {
+					script: 'nx run nativescript-geocoding:build.all',
+					description: '@timdoege/nativescript-geocoding: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -73,10 +80,14 @@ module.exports = {
 			description: '_____________  Focus (VS Code supported)  _____________',
 		},
 		focus: {
+			'nativescript-geocoding': {
+				script: 'nx run nativescript-geocoding:focus',
+				description: 'Focus on @timdoege/nativescript-geocoding',
+			},
 			reset: {
 				script: 'nx run all:focus',
 				description: 'Reset Focus',
-			}
+			},
 		},
 		'.....................': {
 			script: `npx cowsay "That's all for now folks ~"`,
