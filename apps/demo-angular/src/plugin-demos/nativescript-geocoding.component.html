@@ -1,8 +1,20 @@
 <ActionBar title="nativescript-geocoding" class="action-bar"> </ActionBar>
 <StackLayout class="p-20">
 	<ScrollView class="h-full">
-		<StackLayout>
-			<Button text="Test nativescript-geocoding" (tap)="demoShared.testIt()" class="btn btn-primary"></Button>
+		<StackLayout class="page">
+			<SearchBar hint="Location search string" [text]="searchString" (clear)="onSearchBarClear($event)"  (submit)="onSubmit($event)"></SearchBar>
+			<Label text="Name: {{location.name}}"></Label>
+			<Label text="Postal code: {{location.postalCode}}"></Label>
+			<Label text="Country code: {{location.isoCountryCode}}"></Label>
+			<Label text="Country: {{location.country}}"></Label>
+			<Label text="Locality: {{location.locality}}"></Label>
+			<Label text="Sub-locality: {{location.subLocality}}"></Label>
+			<Label text="Administrative Area: {{location.administrativeArea}}"></Label>
+			<Label text="Sub-Administrative Area: {{location.subAdministrativeArea}}"></Label>
+			<Label text="Thoroughfare: {{location.thoroughfare}}"></Label>
+			<Label text="Sub-Thoroughfare: {{location.subThoroughfare}}"></Label>
+			<Label text="Latitude: {{location.latitude}}"></Label>
+			<Label text="Longitude: {{location.longitude}}"></Label>
 		</StackLayout>
 	</ScrollView>
 </StackLayout>

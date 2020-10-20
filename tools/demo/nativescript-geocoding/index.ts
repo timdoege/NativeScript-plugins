@@ -1,5 +1,5 @@
 import { DemoSharedBase } from '../utils';
-import {} from '@timdoege/nativescript-geocoding';
+import { Location } from '@timdoege/nativescript-geocoding';
 
 export class DemoSharedNativescriptGeocoding extends DemoSharedBase {
 	testIt() {
